@@ -1,0 +1,91 @@
+    <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Objeto en 3d - Javier Palma</title>
+    <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+    <script src="lib/aframe-obj-loader-component-master/dist/aframe-obj-loader-component.js"></script>
+    <script src="https://rawgit.com/ngokevin/aframe-animation-component/master/dist/aframe-animation-component.min.js"></script>
+</head>
+
+<body>
+    <!-- Inicializamos la escena -->
+    <a-scene id="escena">
+
+        <a-entity camera="userHeight: 1.6" position="125 0 250" look-controls wasd-controls="acceleration:500"></a-entity>
+
+        <a-sky src="recursos/material/estrellas.jpg"></a-sky>
+        <a-entity>
+            <a-sphere color="orange" radius="65" position="-50 0 0" src="recursos/material/sol.jpg"></a-sphere>
+        </a-entity>
+
+        <a-entity>
+            <a-animation attribute="rotation" to="0 360 0" dur="1000" ease="linear" repeat="indefinite"></a-animation>
+            <a-sphere color="white" radius="1" position="120 0 0" src="recursos/material/mercurio.png">
+            <a-animation attribute="rotation" from="120 0 0" to="120 360 0" direction="normal" dur="1000" repeat="indefinite" easing="ease">
+                </a-animation>
+            </a-sphere>
+        </a-entity>
+
+        <a-entity>
+            <a-animation attribute="rotation" to="0 360 0" dur="3000" ease="linear" repeat="indefinite"></a-animation>
+            <a-sphere color="white" radius="2" position="130 0 0" src="recursos/material/venus.jpg">
+             <a-animation attribute="rotation" from="120 0 0" to="120 360 0" direction="normal" dur="3000" repeat="indefinite" easing="ease">
+                </a-animation>
+            </a-sphere>
+        </a-entity>
+
+        <a-entity>
+            <a-animation attribute="rotation" to="0 360 0" dur="5000" ease="linear" repeat="indefinite"></a-animation>
+            <a-entity>
+                <a-sphere color="white" radius="2.2" position="140 0 0" src="recursos/material/tierra.jpg">
+                 <a-animation attribute="rotation" from="120 0 0" to="120 360 0" direction="normal" dur="5000" repeat="indefinite" easing="ease">
+                </a-animation></a-sphere>
+                <a-sphere color="white" radius="0.3" position="143.4 0 0" src="recursos/material/luna.jpg">
+                 <a-animation attribute="rotation" from="120 0 0" to="120 360 0" direction="normal" dur="5000" repeat="indefinite" easing="ease">
+                </a-animation></a-sphere>
+            </a-entity>
+
+        </a-entity>
+
+        <a-entity>
+            <a-animation attribute="rotation" to="0 360 0" dur="7000" ease="linear" repeat="indefinite"></a-animation>
+            <a-sphere color="white" radius="1.2" position="150 0 0" src="recursos/material/marte.gif">
+             <a-animation attribute="rotation" from="120 0 0" to="120 360 0" direction="normal" dur="7000" repeat="indefinite" easing="ease">
+                </a-animation></a-sphere>
+        </a-entity>
+
+        <a-entity>
+            <a-animation attribute="rotation" to="0 360 0" dur="14000" ease="linear" repeat="indefinite"></a-animation>
+            <a-sphere color="white" radius="23.8" position="170 0 0" src="recursos/material/jupiter.jpg">
+             <a-animation attribute="rotation" from="120 0 0" to="120 360 0" direction="normal" dur="14000" repeat="indefinite" easing="ease">
+                </a-animation></a-sphere>
+        </a-entity>
+
+        <a-entity>
+            <a-animation attribute="rotation" to="0 360 0" dur="18000" ease="linear" repeat="indefinite"></a-animation>
+            <a-entity>
+                <a-sphere color="white" radius="20" position="225 0 0" src="recursos/material/saturno.jpg">
+                 <a-animation attribute="rotation" from="120 0 0" to="120 360 0" direction="normal" dur="18000" repeat="indefinite" easing="ease">
+                </a-animation></a-sphere>
+                <a-ring color="white" radius-inner="25" radius-outer="3" src="recursos/material/anilloSaturno.png" rotation="95 2 0" position="224 0 0 "></a-ring>
+            </a-entity>
+        </a-entity>
+        <a-entity>
+            <a-animation attribute="rotation" to="0 360 0" dur="25000" ease="linear" repeat="indefinite"></a-animation>
+            <a-sphere color="white" radius="8.5" position="270 0 0" src="recursos/material/urano.jpg">
+             <a-animation attribute="rotation" from="120 0 0" to="120 360 0" direction="normal" dur="25000" repeat="indefinite" easing="ease">
+                </a-animation></a-sphere>
+        </a-entity>
+        <a-entity>
+            <a-animation attribute="rotation" to="0 360 0" dur="35000" ease="linear" repeat="indefinite"></a-animation>
+            <a-sphere color="lightblue" radius="8.1" position="290 0 0" src="recursos/material/neptuno.jpg">
+             <a-animation attribute="rotation" from="120 0 0" to="120 360 0" direction="normal" dur="35000" repeat="indefinite" easing="ease">
+                </a-animation></a-sphere>
+        </a-entity>
+
+    </a-scene>
+</body>
+
+</html>

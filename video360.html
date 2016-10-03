@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Video 360 - Javier Palma</title>
+        <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+        <style>
+        #boton-play {
+            position: 0 auto 0 auto;
+        }
+        </style>
+    </head>
+    <body>
+        <!-- Inicializamos la escena -->
+        <button id="boton-play" type="button" onclick="playVideo()">Reproducir Video</button>
+          <a-scene id="escena">
+            <a-camera id="camera" position="0 1.8 4" cursor-visible="true" cursor-scale="2" cursor-color="#000000" cursor-offset="2" cursor-maxdistance="100" cursor-opacity="0.7"></a-camera>
+            <a-assets>
+                <video id="espacio" loop="true" src="recursos/videos/espacio.mp4" webkit-playsinline crossorigin="anonymous" autoplay="false" loop="true" style="display: none" rotation="0 0 0"></video>
+            </a-assets>
+
+            <a-entity geometry="primitive: sphere;
+                    radius: 10000;
+                    segmentsWidth: 64;
+                    segmentsHeight: 64;" material="shader: flat; src: #vid;" scale="-1 1 1"></a-entity>
+            <a-videosphere class="video" src="#espacio"></a-videosphere>
+        </a-scene>
+    </body>
+
+    <script>
+      function playVideo () {
+        var boton = document.getElementById("boton-play");
+        boton.style.display = "none";
+        var vid = document.getElementById('espacio');
+        console.log(vid);
+          vid.play();
+      }
+      
+    </script>
+     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</html>
