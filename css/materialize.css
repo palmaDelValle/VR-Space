@@ -4301,7 +4301,7 @@ nav .brand-logo {
     white-space: nowrap;
     margin-left: 5px;
     margin-right: 5px;
-    
+
 }
 
 nav .brand-logo.center {
@@ -8862,15 +8862,38 @@ button.picker__close:focus {
     }
 }
 
-nav ul li {
+nav div ul li {
     font-family: sans-serif;
 }
 
 .parallax-container {
-      height: "400";
-      z-index: "100";
-      display: "inline";
+      height: "300";
     }
-#cabecera {
-    z-index: "10";
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
+  color: #cddc39;
+}
+.card .card-content p {
+  color: #ffffff;
+}
+.side-nav {
+  background-color: #006064;
+}
+.side-nav a {
+  color: #fff;
+}
+
+footer.page-footer {
+  color: #006064;
+}
+nav ul a {
+  color: #cddc39;
+}
+
+#mobile-demo a {
+  color: #cddc39;
+}
+
+nav a {
+  color: #cddc39;
 }

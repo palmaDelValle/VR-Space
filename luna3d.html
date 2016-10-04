@@ -1,0 +1,28 @@
+    <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Objeto en 3d - Javier Palma</title>
+    <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+    <script src="https://rawgit.com/ngokevin/aframe-animation-component/master/dist/aframe-animation-component.min.js"></script>
+</head>
+
+<body>
+    <!-- Inicializamos la escena -->
+    <a-scene id="escena">
+
+        <a-entity camera="userHeight: 1.6" position="0 0 100" look-controls wasd-controls="acceleration:500"></a-entity>
+
+        <a-sky src="recursos/material/estrellas.jpg"></a-sky>
+
+        <a-entity>
+            <a-sphere color="lightblue" radius="50" position="0 0 0" src="recursos/material/luna.jpg">
+             <a-animation attribute="rotation" from="0 0 0" to="0 360 0" direction="normal" dur="5000" repeat="indefinite" easing="ease">
+                </a-animation></a-sphere>
+        </a-entity>
+
+    </a-scene>
+</body>
+
+</html>

@@ -4,20 +4,138 @@
 <head>
     <meta charset="utf-8">
     <title>Imagen 360 - Javier Palma</title>
-    <!--Import Google Icon Font-->
+    <!--Importamos Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <!--Importamos materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <!--Informamos al navegador que el sitio web está optimizado para móviles-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--Importams A-frame-->
     <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
 </head>
 
 <body>
-    <!-- Inicializamos la escena -->
-    <a-scene id="escena">
-        <a-sky src="recursos/img/lunar.jpg"></a-sky>
-    </a-scene>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+  <nav>
+      <div class="nav-wrapper cyan darken-4">
+          <a href="#!" class="brand-logo"><img class="responsive-img" src="recursos/img/logo.png" alt="Logo de la página"/></a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="imagen360.html">Imágenes VR</a></li>
+              <li><a href="video360.html">Vídeos VR</a></li>
+              <li><a href="objetos3d.html">Sistema Solar 3D</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="imagen360.html">Imágenes VR</a></li>
+              <li><a href="video360.html">Vídeos VR</a></li>
+              <li><a href="objetos3d.html">Sistema Solar 3D</a></li>
+         </ul>
+      </div>
+  </nav>
+  <div class="row">
+      <div class="col s12 m6 l6">
+          <div class="card small cyan darken-4 z-depth-4">
+              <div class="card-image" center id="luna">
+                  <span class="card-title">Imágenes en 360</span>
+              </div>
+              <div class="card-content">
+                  <p>Fases lunares en 360 grados.</p>
+              </div>
+              <div class="card-action">
+                  <a href="luna360.html">Enlace a la imagen.</a>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col s12 m6 l6">
+              <div class="card small cyan darken-4 z-depth-4">
+                  <div class="card-image" center id="apollo">
+                      <span class="card-title">Imágenes en 360</span>
+                  </div>
+                  <div class="card-content">
+                      <p>Vista interior del apollo 11 en 360.</p>
+                  </div>
+                  <div class="card-action">
+                      <a href="apollo.html">Enlace a la imagen.</a>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col s12 m6 l6">
+                  <div class="card small cyan darken-4 z-depth-4">
+                      <div class="card-image" center id="constelacion">
+                          <span class="card-title">Imágenes en 360</span>
+                      </div>
+                      <div class="card-content">
+                          <p>Visualización de constelaciones en 360.</p>
+                      </div>
+                      <div class="card-action">
+                          <a href="constelacion.html">Enlace a la imagen.</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col s12 m6 l6">
+                      <div class="card small cyan darken-4 z-depth-4">
+                          <div class="card-image" center id="tierra">
+                              <span class="card-title">Imágenes en 360</span>
+                          </div>
+                          <div class="card-content">
+                              <p>Visualización de la Tierra en 360.</p>
+                          </div>
+                          <div class="card-action">
+                              <a href="tierra.html">Enlace a la imagen.</a>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+
+                  <footer class="page-footer cyan darken-4">
+                            <div class="container">
+                              <div class="row">
+                                <div class="col l6 s12">
+                                  <h5 class="lime-text">Realidad Virtual en el navegador con A-Frame</h5>
+                                  <p class="grey-text text-lighten-4">Proyecto final del progarama Generation Spain,
+                                    una iniciativa de la consultora americana McKinsey, con la ayuda de la Unión Europea y la colaboración de la EOI.</p>
+                                </div>
+                                <div class="col l4 offset-l2 s12">
+                                  <h5 class="lime-text">Enlaces de interés</h5>
+                                  <ul>
+                                    <li><a class="grey-text text-lighten-3" href="https://github.com/palmaDelValle">Repositorio personal en github</a></li>
+                                    <li><a class="grey-text text-lighten-3" href="https://es.linkedin.com/in/palmadelvalle">Linkedin - Javier Palma</a></li>
+                                    <li><a class="grey-text text-lighten-3" href="https://aframe.io/">Página oficial del framework A-Frame</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="footer-copyright">
+                              <div class="container">
+                              © 2016 Copyright
+                              <a class="grey-text text-lighten-4 right" href="https://github.com/palmaDelValle/VR-Space">Repositorio en Github del proyecto</a>
+                              </div>
+                            </div>
+                          </footer>
+
+      <script type="text/javascript">
+          $(document).ready(function (){
+                  $(".button-collapse").sideNav();
+              });
+
+        var scene = document.getElementById('scene');
+          function imagen360() {
+               document.getElementById("luna").innerHTML = '<object type="text/html" data="luna360.html" ></object>';
+               document.getElementById("apollo").innerHTML = '<object type="text/html" data="apollo.html" ></object>';
+               document.getElementById("constelacion").innerHTML = '<object type="text/html" data="constelacion.html" ></object>';
+               document.getElementById("tierra").innerHTML = '<object type="text/html" data="tierra.html" ></object>';
+           };
+
+            imagen360();
+
+              </script>
+
 </body>
 
 </html>

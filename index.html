@@ -7,7 +7,7 @@
     <!--Importamos Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Importamos materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
     <!--Informamos al navegador que el sitio web está optimizado para móviles-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!--Importams A-frame-->
@@ -18,66 +18,79 @@
 
 <body>
     <nav>
-        <div class="nav-wrapper pink darken-4">
-            <a href="#!" class="brand-logo">  VR</a>
+        <div class="nav-wrapper cyan darken-4">
+            <a href="#!" class="brand-logo"><img class="responsive-img" src="recursos/img/logo.png" alt="Logo de la página"/></a>
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="imagen360.html">Imágenes VR</a></li>
                 <li><a href="video360.html">Vídeos VR</a></li>
-                <li><a href="sistSolar.html">Sistema Solar 3D</a></li>
+                <li><a href="objetos3d.html">Sistema Solar 3D</a></li>
             </ul>
             <ul class="side-nav" id="mobile-demo">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="imagen360.html">Imágenes VR</a></li>
                 <li><a href="video360.html">Vídeos VR</a></li>
-                <li><a href="sistSolar.html">Sistema Solar 3D</a></li>
+                <li><a href="objetos3d.html">Sistema Solar 3D</a></li>
            </ul>
         </div>
     </nav>
     <div class="parallax-container">
       <div class="parallax"><img src="recursos/img/parallax2.jpeg"></div>
     </div>
-    
-    <!-- Enlace para imagen en 360 -->
 
     <div class="row">
-        <div class="col s12 l6">
-            <div class="card small pink darken-4 z-depth-4">
-                <div class="card-image" center id="imagen360">
-                    <span class="card-title">Imágenes en 360</span>
-                </div>
-                <div class="card-content">
-                    <p>Visualizador de imágenes equirectangulares en 360 grados.</p>
-                </div>
-                <div class="card-action">
-                    <a href="imagen360.html">Enlace a las imágenes</a>
-                </div>
-            </div>
-        </div>
-        <!--Visualizador Sistema Solar -->
-        <div class="col s12 l6">
-            <div class="card small pink darken-4 z-depth-4">
-                <div class="card-image" id="objeto3d">
-                    <span class="card-title">Sistema solar en VR</span>
-                </div>
-                <div class="card-content">
-                    <p>Visualizador de escenas en VR.</p>
-                </div>
-                <div class="card-action">
-                    <a href="sistSolar.html">Enlace a la representación en 3D del sistema solar</a>
-                </div>
-            </div>
-        </div>
+    <!-- Enlace para imagen en 360 -->
+      <div class="col s12 l12">
+          <div class="card cyan darken-4 z-depth-4">
+              <div class="col s12 m6 l3" id="luna360">
+                  <span class="card-title">Imágenes en VR</span>
+              </div>
+              <div class="col s12 m6 l3" id="apollo"></div>
+              <div class="col s12 m6 l3" id="constelacion"></div>
+              <div class="col s12 m6 l3" id="tierra"></div>
+              <div class="card-content">
+                  <p>Visualizador de imágenes en VR.</p>
+              </div>
+              <div class="card-action">
+                  <a href="imagen360.html">Enlace a la galería de imágenes en 360.</a>
+              </div>
+          </div>
+      </div>
     </div>
-    <div class="parallax-container">
-      <div class="parallax"><img src="recursos/img/parallax3.jpg"></div>
-    </div>
-    <!-- Enlace para videos en 360 -->
 
+        <div class="parallax-container">
+          <div class="parallax"><img src="recursos/img/parallax3.jpg"></div>
+        </div>
+
+        <div class="row">
+      <!--Visualizador Sistema Solar -->
+          <div class="col s12 l12">
+              <div class="card cyan darken-4 z-depth-4">
+                  <div class="col s12 m6 l3" id="objeto3d">
+                      <span class="card-title">Sistema solar en VR</span>
+                  </div>
+                  <div class="col s12 m6 l3" id="luna3d"></div>
+                  <div class="col s12 m6 l3" id="tierra3d"></div>
+                  <div class="col s12 m6 l3" id="sol3d"></div>
+                  <div class="card-content">
+                      <p>Visualizador de escenas 3D en VR.</p>
+                  </div>
+                  <div class="card-action">
+                      <a href="objetos3d.html">Enlace a la representación en 3D del sistema solar</a>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="parallax-container">
+          <div class="parallax"><img src="recursos/img/parallax.jpg"></div>
+        </div>
+
+    <!-- Enlace para videos en 360 -->
     <div class="row">
         <div class="col s12 l12">
-            <div class="card small pink darken-4 z-depth-4">
+            <div class="card medium cyan darken-4 z-depth-4">
                 <div class="card-image">
                     <img class="responsive-img" src="recursos/img/nasa1.jpg">
                     <span class="card-title">Videos en 360</span>
@@ -86,13 +99,40 @@
                     <p>Reproductor de videos en 360 grados.</p>
                 </div>
                 <div class="card-action">
-                    <a href="video360.html">Enlace a los videos</a>
+                    <a href="video360.html">Enlace al video</a>
                 </div>
             </div>
         </div>
     </div>
+
+    <footer class="page-footer cyan darken-4">
+              <div class="container">
+                <div class="row">
+                  <div class="col l6 s12">
+                    <h5 class="lime-text">Realidad Virtual en el navegador con A-Frame</h5>
+                    <p class="grey-text text-lighten-4">Proyecto final del progarama Generation Spain,
+                      una iniciativa de la consultora americana McKinsey, con la ayuda de la Unión Europea y la colaboración de la EOI.</p>
+                  </div>
+                  <div class="col l4 offset-l2 s12">
+                    <h5 class="lime-text">Enlaces de interés</h5>
+                    <ul>
+                      <li><a class="grey-text text-lighten-3" href="https://github.com/palmaDelValle">Repositorio personal en github</a></li>
+                      <li><a class="grey-text text-lighten-3" href="https://es.linkedin.com/in/palmadelvalle">Linkedin - Javier Palma</a></li>
+                      <li><a class="grey-text text-lighten-3" href="https://aframe.io/">Página oficial del framework A-Frame</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-copyright">
+                <div class="container">
+                © 2016 Copyright
+                <a class="grey-text text-lighten-4 right" href="https://github.com/palmaDelValle/VR-Space">Repositorio en Github del proyecto</a>
+                </div>
+              </div>
+            </footer>
+
     <script type="text/javascript">
-       
+
         $(document).ready(function (){
             $(".button-collapse").sideNav();
             $('.parallax').parallax();
@@ -100,17 +140,23 @@
 
 	var scene = document.getElementById('scene');
     function imagen360() {
-         document.getElementById("imagen360").innerHTML = '<object type="text/html" data="imagen360.html" ></object>';
+         document.getElementById('luna360').innerHTML = '<object type="text/html" data="luna360.html"></object>';
+         document.getElementById('apollo').innerHTML = '<object type="text/html" data="apollo.html"></object>';
+         document.getElementById('constelacion').innerHTML = '<object type="text/html" data="constelacion.html"></object>';
+         document.getElementById('tierra').innerHTML = '<object type="text/html" data="tierra.html"></object>';
      };
 
     function cargarObjeto() {
          document.getElementById("objeto3d").innerHTML = '<object type="text/html" data="sistSolar.html"></object>';
+         document.getElementById("luna3d").innerHTML = '<object type="text/html" data="luna3d.html"></object>';
+         document.getElementById("tierra3d").innerHTML = '<object type="text/html" data="tierra3d.html"></object>';
+         document.getElementById("sol3d").innerHTML = '<object type="text/html" data="sol3d.html"></object>';
      };
       imagen360();
       cargarObjeto();
-       
+
     </script>
-  
+
 </body>
 
 </html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Objetos 3D - Javier Palma</title>
+    <!--Importamos Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Importamos materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <!--Informamos al navegador que el sitio web está optimizado para móviles-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--Importams A-frame-->
+    <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</head>
+
+<body>
+  <nav>
+      <div class="nav-wrapper cyan darken-4">
+          <a href="#!" class="brand-logo"><img class="responsive-img" src="recursos/img/logo.png" alt="Logo de la página"/></a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="imagen360.html">Imágenes VR</a></li>
+              <li><a href="video360.html">Vídeos VR</a></li>
+              <li><a href="objetos3d.html">Sistema Solar 3D</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="imagen360.html">Imágenes VR</a></li>
+              <li><a href="video360.html">Vídeos VR</a></li>
+              <li><a href="objetos3d.html">Sistema Solar 3D</a></li>
+         </ul>
+      </div>
+  </nav>
+  <div class="row">
+      <div class="col s12 m6 l6">
+          <div class="card small cyan darken-4 z-depth-4">
+              <div class="card-image" center id="sistSolar">
+                  <span class="card-title">Sistema solar en VR</span>
+              </div>
+              <div class="card-content">
+                  <p>Representación del sistema solar en realidad virtual.</p>
+              </div>
+              <div class="card-action">
+                  <a href="sistSolar.html">Enlace al sistema solar.</a>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col s12 m6 l6">
+              <div class="card small cyan darken-4 z-depth-4">
+                  <div class="card-image" center id="luna3d">
+                      <span class="card-title">Luna en VR</span>
+                  </div>
+                  <div class="card-content">
+                      <p>Representación de la Luna en realidad virtual.</p>
+                  </div>
+                  <div class="card-action">
+                      <a href="luna3d.html">Enlace a la Luna.</a>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col s12 m6 l6">
+                  <div class="card small cyan darken-4 z-depth-4">
+                      <div class="card-image" center id="tierra3d">
+                          <span class="card-title">Tierra en VR</span>
+                      </div>
+                      <div class="card-content">
+                          <p>Representación de la Tierra en realiad virtual.</p>
+                      </div>
+                      <div class="card-action">
+                          <a href="tierra3d.html">Enlace a la Tierra</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col s12 m6 l6">
+                      <div class="card small cyan darken-4 z-depth-4">
+                          <div class="card-image" center id="sol3d">
+                              <span class="card-title">Sol en VR</span>
+                          </div>
+                          <div class="card-content">
+                              <p>Representación del Sol en realidad virtual.</p>
+                          </div>
+                          <div class="card-action">
+                              <a href="sol3d.html">Enlace al Sol.</a>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+
+                  <footer class="page-footer cyan darken-4">
+                            <div class="container">
+                              <div class="row">
+                                <div class="col l6 s12">
+                                  <h5 class="lime-text">Realidad Virtual en el navegador con A-Frame</h5>
+                                  <p class="grey-text text-lighten-4">Proyecto final del progarama Generation Spain,
+                                    una iniciativa de la consultora americana McKinsey, con la ayuda de la Unión Europea y la colaboración de la EOI.</p>
+                                </div>
+                                <div class="col l4 offset-l2 s12">
+                                  <h5 class="lime-text">Enlaces de interés</h5>
+                                  <ul>
+                                    <li><a class="grey-text text-lighten-3" href="https://github.com/palmaDelValle">Repositorio personal en github</a></li>
+                                    <li><a class="grey-text text-lighten-3" href="https://es.linkedin.com/in/palmadelvalle">Linkedin - Javier Palma</a></li>
+                                    <li><a class="grey-text text-lighten-3" href="https://aframe.io/">Página oficial del framework A-Frame</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="footer-copyright">
+                              <div class="container">
+                              © 2016 Copyright
+                              <a class="grey-text text-lighten-4 right" href="https://github.com/palmaDelValle/VR-Space">Repositorio en Github del proyecto</a>
+                              </div>
+                            </div>
+                          </footer>
+
+      <script type="text/javascript">
+          $(document).ready(function (){
+                  $(".button-collapse").sideNav();
+              });
+
+        var scene = document.getElementById('scene');
+        function cargarObjeto() {
+             document.getElementById("sistSolar").innerHTML = '<object type="text/html" data="sistSolar.html"></object>';
+             document.getElementById("luna3d").innerHTML = '<object type="text/html" data="luna3d.html"></object>';
+             document.getElementById("tierra3d").innerHTML = '<object type="text/html" data="tierra3d.html"></object>';
+             document.getElementById("sol3d").innerHTML = '<object type="text/html" data="sol3d.html"></object>';
+         };
+
+            cargarObjeto();
+
+              </script>
+
+</body>
+
+</html>
