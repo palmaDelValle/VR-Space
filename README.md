@@ -19,4 +19,4 @@ It describes a web page that hosts various elements of VR (Virtual Reality), usi
 # Used elements:
 - Representation of images in 360 degrees, using equirectangulars images, you can find a great selection of this types of images in the following Flickr group: https://www.flickr.com/groups/equirectangular/
 - Representation of the solar system and various elements developed from geometric shapes with the A-Frame framework.
-- Videos in VR.
+- VR videos.
