@@ -8872,12 +8872,14 @@ nav div ul li {
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
   color: #cddc39;
+  font-weight: bold;
 }
 .card .card-content p {
   color: #ffffff;
 }
 .side-nav {
   background-color: #006064;
+  font-weight: bold;
 }
 .side-nav a {
   color: #fff;
@@ -8885,15 +8887,22 @@ nav div ul li {
 
 footer.page-footer {
   color: #006064;
+  font-weight: bold;
 }
 nav ul a {
   color: #cddc39;
+  font-weight: bold;
 }
 
 #mobile-demo a {
   color: #cddc39;
+  font-weight: bold;
 }
 
 nav a {
   color: #cddc39;
+  font-weight: bold;
+}
+h5 {
+   color: #006064;
 }
